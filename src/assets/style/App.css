@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    width: calc(80px * 8);
+    height: calc(80px * 8);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.black {
+    background: #629d5c;
+}
+
+.white {
+    background: #f4f3d7;
+}
+
+.selected {
+    background: brown;
+}
+
+.available {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgba(176,176,176,0.59);
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background: grey;
+    color: white;
+}
+
+.lost__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
